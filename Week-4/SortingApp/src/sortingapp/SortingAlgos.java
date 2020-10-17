@@ -11,12 +11,19 @@ public class SortingAlgos
         bComp = 0;
     }
     
-    public void BubbleSort(int bList[])
+    public void BubbleSort(int array[])
     {
-        
-        //Implement Bubble Sort Algorithm Here
-        System.out.println("BUBBLE SORT IS NOT YET IMPLEMENTED");
-    
+
+        for (int i = 0; i < array.length-1; i++) {
+            for (int j = 0; j < array.length-1-i; j++) {
+                if(array[j]>array[j+1]){
+                    int temp;
+                    temp=array[j];
+                    array[j]=array[j+1];
+                    array[j+1]=temp;
+                }
+            }
+    }  
     
     }
     
