@@ -14,8 +14,10 @@ public class SortingAlgos
     public void BubbleSort(int array[])
     {
 
-        for (int i = 0; i < array.length-1; i++) {
-            for (int j = 0; j < array.length-1-i; j++) {
+        for (int i = 0; i < array.length-1; i++) 
+        {
+            for (int j = 0; j < array.length-1-i; j++) 
+            {
                 if(array[j]>array[j+1]){
                     int temp;
                     temp=array[j];
@@ -23,8 +25,24 @@ public class SortingAlgos
                     array[j+1]=temp;
                 }
             }
-    }  
+        }  
     
+    }
+    public void selectionSort(int array[])
+    {
+        for (int i = 0; i < array.length-1; i++) 
+        {
+            int min=i;
+            for (int j = i+1; j < array.length; j++) 
+            {
+                if(array[j]<array[min])
+                    min=j;
+            }
+            
+            int temp=array[i];
+            array[i]=array[min];
+            array[min]=temp;
+        }
     }
     
     public void PrintList(int List[])
