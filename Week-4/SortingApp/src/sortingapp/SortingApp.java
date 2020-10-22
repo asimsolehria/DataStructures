@@ -54,9 +54,11 @@ public class SortingApp
             else if(choice == 'S' || choice == 's')
             {
                 System.out.println("\n------------------------------------");
-                
-                System.out.println("\nSELECTION SORT IS NOT IMPLEMENTED YET");
-                
+                System.out.print("\nList Before Sort : ");
+                sort.PrintList(bblList);
+                sort.selectionSort(bblList);
+                System.out.print("\nList After  Sort : ");
+                sort.PrintList(bblList);
                 System.out.println("\n------------------------------------");
             }
             else if(choice == 'I' || choice == 'i')
