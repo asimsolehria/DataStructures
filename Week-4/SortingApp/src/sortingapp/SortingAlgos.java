@@ -38,10 +38,12 @@ public class SortingAlgos
                 if(array[j]<array[min])
                     min=j;
             }
-            
-            int temp=array[i];
-            array[i]=array[min];
-            array[min]=temp;
+            if(min!=i)
+            {
+                int temp=array[i];
+                array[i]=array[min];
+                array[min]=temp;
+            }
         }
     }
     
