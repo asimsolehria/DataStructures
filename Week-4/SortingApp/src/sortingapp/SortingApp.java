@@ -1,6 +1,6 @@
 package sortingapp;
 import java.util.Scanner;
-
+import java.util.concurrent.TimeUnit;
 public class SortingApp 
 {
 
@@ -18,7 +18,6 @@ public class SortingApp
         //Create a Master List
         mstrList = new int[size];
         bblList = new int[size];
-        
         
         for(int i=0; i<size; i++)
         {
@@ -45,21 +44,23 @@ public class SortingApp
             {
                 System.out.println("\n------------------------------------");
                 System.out.print("\nList Before Sort : ");
-                sort.PrintList(bblList);
+                sort.PrintList(mstrList);
                 sort.BubbleSort(bblList);
                 System.out.print("\nList After  Sort : ");
                 sort.PrintList(bblList);
                 System.out.println("\n------------------------------------");
+                sort.PrintReport();
             }
             else if(choice == 'S' || choice == 's')
             {
                 System.out.println("\n------------------------------------");
                 System.out.print("\nList Before Sort : ");
-                sort.PrintList(bblList);
+                sort.PrintList(mstrList);
                 sort.selectionSort(bblList);
                 System.out.print("\nList After  Sort : ");
                 sort.PrintList(bblList);
                 System.out.println("\n------------------------------------");
+                sort.PrintReport();
             }
             else if(choice == 'I' || choice == 'i')
             {
