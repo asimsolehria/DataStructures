@@ -61,10 +61,10 @@ public class SortingAlgos
 //        System.out.println("Number of swaps performed were:"+bSwap);
 //        System.out.println("No of comparisons performed were :"+bComp);
     }
-    void insertionSort(int arr[], int n)  
+    void insertionSort(int arr[])  
 {  
     int i, key, j;  
-    for (i = 1; i < n; i++) 
+    for (i = 1; i < arr.length; i++) 
     {  
         key = arr[i];  
         j = i - 1;  
