@@ -19,6 +19,7 @@ public class main {
             System.out.println("\t5. Sum of Squares");
 	    System.out.println("\t6. Factorial ");
             System.out.println("\t7  Linear Sum of an Array");
+            System.out.println("\t8  Reverse an Array");
             System.out.println("\t0. Exit Programe");
             
             System.out.println("------------------------------------");
@@ -127,6 +128,26 @@ public class main {
                 int sum=recObj.linSum(arr, arr.length-1);
                 System.out.print("Sum of given array elements is :");
                 System.out.println(sum);
+                System.out.println("\n------------------------------------");
+		
+
+                
+            }
+	    else if(choice == 8)
+            {
+		
+                System.out.println("\n------------------------------------");
+                System.out.print("Enter array elements to get reverse array!");
+                int arr[]=new int[10];
+                for (int i = 0; i < 10; i++) {
+                    System.out.println("\nEnter array element #"+(i+1));
+                    arr[i]=input.nextInt();
+                }
+                recObj.reverseList(arr, 0, arr.length-2);
+                System.out.print("Reverse of given array is :");
+                for (int i : arr) {
+                    System.out.println(i);
+                }
                 System.out.println("\n------------------------------------");
 		
 

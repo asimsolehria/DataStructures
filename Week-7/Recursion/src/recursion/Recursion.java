@@ -16,4 +16,18 @@ public class Recursion {
     {
         return l==0?arr[0]:arr[l]+linSum(arr, l-1);
     }
+    
+    public void reverseList(int arr[],int i , int j)
+    {
+        if(i!=j)
+        {
+            int temp;
+            temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+            reverseList(arr, i+1, j-1);
+        }
+        
+        
+    }
 }
