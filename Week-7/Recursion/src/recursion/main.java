@@ -18,9 +18,11 @@ public class main {
             System.out.println("\t4. Triangular Series");
             System.out.println("\t5. Sum of Squares");
 	    System.out.println("\t6. Factorial ");
+            System.out.println("\t7  Linear Sum of an Array");
             System.out.println("\t0. Exit Programe");
+            
             System.out.println("------------------------------------");
-            System.out.print("Enter Your Choice (0/1/2/3/4/5/6) : ");
+            System.out.print("Enter Your Choice (0/1/2/3/4/5/6/7) : ");
             
             choice =  input.nextInt();
             
@@ -112,6 +114,25 @@ public class main {
 
                 
             }
+	    else if(choice == 7)
+            {
+		
+                System.out.println("\n------------------------------------");
+                System.out.print("Enter array elements to get sum!");
+                int arr[]=new int[10];
+                for (int i = 0; i < 10; i++) {
+                    System.out.println("\nEnter array element #"+(i+1));
+                    arr[i]=input.nextInt();
+                }
+                int sum=recObj.linSum(arr, arr.length-1);
+                System.out.print("Sum of given array elements is :");
+                System.out.println(sum);
+                System.out.println("\n------------------------------------");
+		
+
+                
+            }
+          
             else if(choice == 0)
             {
                 System.out.println("\n--------------------------------");
