@@ -19,7 +19,7 @@ public class Recursion {
     
     public void reverseList(int arr[],int i , int j)
     {
-        if(i!=j)
+        if(i<j)
         {
             int temp;
             temp=arr[i];

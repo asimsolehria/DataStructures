@@ -23,7 +23,7 @@ public class main {
             System.out.println("\t0. Exit Programe");
             
             System.out.println("------------------------------------");
-            System.out.print("Enter Your Choice (0/1/2/3/4/5/6/7) : ");
+            System.out.print("Enter Your Choice (0/1/2/3/4/5/6/7/8) : ");
             
             choice =  input.nextInt();
             
@@ -143,8 +143,8 @@ public class main {
                     System.out.println("\nEnter array element #"+(i+1));
                     arr[i]=input.nextInt();
                 }
-                recObj.reverseList(arr, 0, arr.length-2);
-                System.out.print("Reverse of given array is :");
+                recObj.reverseList(arr, 0, arr.length-1);
+                System.out.print("Reverse of given array is :\n");
                 for (int i : arr) {
                     System.out.println(i);
                 }
