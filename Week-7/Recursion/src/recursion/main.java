@@ -29,30 +29,27 @@ public class main {
             
             if(choice == 1)
             {
-                /*System.out.println("\n------------------------------------");
+                System.out.println("\n------------------------------------");
                 System.out.print("\nEnter First Number ");
                 N1 = input.nextInt();
                 System.out.print("\nEnter Second Number ");
                 N2 = input.nextInt();
-                int GCD = recObj.EuGCD(N1, N2);
+                int GCD = recObj.gcd(N1, N2);
                 System.out.print("\nThe GCD of "+N1+" and "+N2+" : "+GCD);
-                */
-		System.out.println("Not Yet Implemented");
             }
             else if(choice == 2)
             {
-		/*
                 System.out.println("\n------------------------------------");
                 System.out.print("\nEnter Number for Fib Term : ");
                 int F = input.nextInt();
                 int Term = recObj.Fibonacci(F);
                 System.out.print("\nThe "+F+"th Term of Fibonacci Seireis is "+Term);
-                */
-		System.out.println("Not Yet Implemented");
+                
+		
             }
             else if(choice == 3)
             {
-		/*
+		
                 System.out.println("\n------------------------------------");
                 System.out.print("\nEnter Number of Fib Terms : ");
                 int N = input.nextInt();
@@ -64,13 +61,12 @@ public class main {
                 }
                 System.out.println();
                 System.out.println("\n------------------------------------");
-		*/
-		System.out.println("Not Yet Implemented");
+		
                 
             }
             else if(choice == 4)
             {
-		/*
+		
                 System.out.println("\n------------------------------------");
                 System.out.print("Enter the Triangular Series Range : ");
                 int R = input.nextInt();
@@ -83,22 +79,19 @@ public class main {
                 }
                 System.out.println();
                 System.out.println("\n------------------------------------");
-		*/
-		System.out.println("Not Yet Implemented");
+	
                 
             }
             else if(choice == 5)
             {
-		/*
+		
                 System.out.println("\n------------------------------------");
                 System.out.print("Sum of Square Range: ");
                 int R = input.nextInt();
                 System.out.print("The Sum of First"+R+" integers:");
-                int SUM = recObj.SquarSum(R);
+                int SUM = recObj.squareSum(R);
                 System.out.println(SUM);
                 System.out.println("\n------------------------------------");
-		*/
-		System.out.println("Not Yet Implemented");
                 
             }
 	    else if(choice == 6)

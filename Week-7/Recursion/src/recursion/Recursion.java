@@ -30,4 +30,23 @@ public class Recursion {
         
         
     }
+    public int gcd(int a , int b)
+    {
+        return b==0?a:gcd(b,a%b);
+    }
+    
+    public int Fibonacci(int nth)
+    {
+        return nth<=1?nth:Fibonacci(nth-1)+Fibonacci(nth-2);
+    }
+    
+    public int Triangular(int n)
+    {
+        return n==1?1:n+Triangular(n-1);
+    }
+    
+    public int squareSum(int n)
+    {
+        return n==1?1:(n*n)+squareSum(n-1);
+    }
 }
