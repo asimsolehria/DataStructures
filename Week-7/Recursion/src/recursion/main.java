@@ -21,10 +21,11 @@ public class main {
             System.out.println("\t7  Linear Sum of an Array");
             System.out.println("\t8  Reverse an Array");
             System.out.println("\t9  Binary Sum of an array");
+            System.out.println("\t10  Binary search of an array");
             System.out.println("\t0. Exit Programe");
             
             System.out.println("------------------------------------");
-            System.out.print("Enter Your Choice (0/1/2/3/4/5/6/7/8/9) : ");
+            System.out.print("Enter Your Choice (0/1/2/3/4/5/6/7/8/9/10) : ");
             
             choice =  input.nextInt();
             
@@ -160,6 +161,24 @@ public class main {
                 int sum=recObj.BinarySum(arr, 0, arr.length);
                 System.out.print("Sum of given array elements is :");
                 System.out.println(sum);
+                System.out.println("\n------------------------------------");
+                
+            }
+	    else if(choice == 10)
+            {
+		
+                System.out.println("\n------------------------------------");
+                System.out.print("Enter array elements and an elemet then to search in it!");
+                int arr[]=new int[8];
+                for (int i = 0; i < 8; i++) {
+                    System.out.println("\nEnter array element #"+(i+1));
+                    arr[i]=input.nextInt();
+                }
+                System.out.println("\nEnter element now to search in the array you just provided!");
+                int elementTofind=input.nextInt();
+                int index=recObj.binarySearch(arr, 0, arr.length-1, elementTofind);
+                System.out.print("Element found at");
+                System.out.println(index);
                 System.out.println("\n------------------------------------");
                 
             }
