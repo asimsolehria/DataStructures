@@ -20,10 +20,11 @@ public class main {
 	    System.out.println("\t6. Factorial ");
             System.out.println("\t7  Linear Sum of an Array");
             System.out.println("\t8  Reverse an Array");
+            System.out.println("\t9  Binary Sum of an array");
             System.out.println("\t0. Exit Programe");
             
             System.out.println("------------------------------------");
-            System.out.print("Enter Your Choice (0/1/2/3/4/5/6/7/8) : ");
+            System.out.print("Enter Your Choice (0/1/2/3/4/5/6/7/8/9) : ");
             
             choice =  input.nextInt();
             
@@ -144,6 +145,22 @@ public class main {
                 System.out.println("\n------------------------------------");
 		
 
+                
+            }
+	    else if(choice == 9)
+            {
+		
+                System.out.println("\n------------------------------------");
+                System.out.print("Enter array elements to get sum!");
+                int arr[]=new int[8];
+                for (int i = 0; i < 8; i++) {
+                    System.out.println("\nEnter array element #"+(i+1));
+                    arr[i]=input.nextInt();
+                }
+                int sum=recObj.BinarySum(arr, 0, arr.length);
+                System.out.print("Sum of given array elements is :");
+                System.out.println(sum);
+                System.out.println("\n------------------------------------");
                 
             }
           
