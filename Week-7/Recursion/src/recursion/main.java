@@ -21,11 +21,12 @@ public class main {
             System.out.println("\t7  Linear Sum of an Array");
             System.out.println("\t8  Reverse an Array");
             System.out.println("\t9  Binary Sum of an array");
-            System.out.println("\t10  Binary search of an array");
+            System.out.println("\t10 Binary search of an array");
+            System.out.println("\t11 Sum of digits of an integer");
             System.out.println("\t0. Exit Programe");
             
             System.out.println("------------------------------------");
-            System.out.print("Enter Your Choice (0/1/2/3/4/5/6/7/8/9/10) : ");
+            System.out.print("Enter Your Choice (0/1/2/3/4/5/6/7/8/9/10/11) : ");
             
             choice =  input.nextInt();
             
@@ -179,6 +180,18 @@ public class main {
                 int index=recObj.binarySearch(arr, 0, arr.length-1, elementTofind);
                 System.out.print("Element found at");
                 System.out.println(index);
+                System.out.println("\n------------------------------------");
+                
+            }
+	    else if(choice == 11)
+            {
+		
+                System.out.println("\n------------------------------------");
+                System.out.print("Enter a multi digit integer number to get sum og its digits!");
+                int n=input.nextInt();
+                
+                System.out.print("Sum of digits of given integers is: ");
+                System.out.println(recObj.intSum(n));
                 System.out.println("\n------------------------------------");
                 
             }

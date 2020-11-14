@@ -89,4 +89,9 @@ public class Recursion {
         return -1;
     }
     
+    public int intSum(int n)
+    {
+        return n>0?(n%10)+intSum(n/10):n;
+        
+    }
 }
